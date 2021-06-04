@@ -6,7 +6,7 @@ This is a microservice designed for managing a family "Secret Santa."  This proj
 
 There's a pipfile and a requirements.txt,  do what works best for you.  
 
-I wrote this using python 3.8.  I'm unsure if anything in this project is new to 3.8, but figured I'd give you a heads up.
+I wrote this using python 3.9.  I'm unsure if anything in this project is new to 3.9, but figured I'd give you a heads up because the pipfile requires it.
 
 ## Usage
 
