@@ -1,0 +1,44 @@
+{% extends "layout.html" %} {% block content %}
+<br>
+<div>
+<h3>Family Members</h3>
+<table class="ui celled table">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for family_member in family_members%}
+    <tr>
+      <td>{{ family_member.id }}</td>
+      <td>{{ family_member.first_name }}</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+</div>
+<br>
+<br>
+<div>
+  <h3>Secret Santa Records</h3>
+  <table class="ui celled table">
+    <thead>
+      <tr>
+        <th>Year</th>
+        <th>Record</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for recipient_record in recipient_records %}
+      <tr>
+        <td>{{ recipient_record.year }}</td>
+        <td>{{ recipient_record.record }}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+  </div>
+
+{% endblock %}
